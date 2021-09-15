@@ -1,0 +1,534 @@
+<!html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+    <title>Sites do IFGW</title>
+</head>
+<body>
+    <header id="header">
+        <img class="logo" src="https://i.ibb.co/x1NQBTm/ifgw-branco.png" alt="logo" height="35" width="70">
+        <nav id="nav">
+            <button id="btn-mobile" aria-label="Abrir Menu" aria-haspopup="true" aria-controls="menu" aria-expanded="false">
+                <span id="hamburguer"></span>
+            </button>
+            <!-- Links que aparecem no menu-->
+            <ul id="menu" role="menu">
+                <a class="links" href="https://sites.ifi.unicamp.br/">Início</a>
+                <a class="links" href="https://sites.ifi.unicamp.br/docentes/">Docentes</a>
+                <a class="links" href="https://sites.ifi.unicamp.br/pesquisadores/">Pesquisadores</a>
+                <a class="links" href="https://sites.ifi.unicamp.br/funcionarios/">Funcionários</a>
+                <a class="links" href="https://sites.ifi.unicamp.br/grupos/">Grupos</a>
+                <a class="links" href="https://sites.ifi.unicamp.br/laboratorios/">Laboratórios</a>
+                <a class="links" href="https://sites.ifi.unicamp.br/disciplinas/">Disciplinas</a>
+                <a class="links" href="https://sites.ifi.unicamp.br/eventos/">Eventos</a>
+                <a class="links" href="https://sites.ifi.unicamp.br/servicos/">Serviços</a>
+            </ul>
+        </nav>
+    </header>
+    <section>
+
+    </section>
+
+    <section class="grid">
+        <div class="noticias">
+            <!-- Titulo e efeito de digitação-->
+            <div>
+                <img class="logoifgw"src="https://i.ibb.co/r6JBGV2/VETOR-b.png" alt="VETOR-b" border="0">
+
+            </div>
+            <div>
+
+                <h2 class="digitacao">Um Blog do Instituto de Física "Gleb Wataghin"</h2>
+                <script>
+                    function typeWrite(elemento) {
+                        const textoArray = elemento.innerHTML.split('');
+                        elemento.innerHTML ='';
+                        textoArray.forEach((letra, i) => {
+                            setTimeout(function() {
+                                elemento.innerHTML+= letra;
+                            }, 100* i)
+                        });
+                    }
+
+                     const titulo= document.querySelector('.digitacao');
+                     typeWrite(titulo);
+                </script>
+            </div>
+
+        </div>
+        <div class="sidebar">
+            <!--RSS noticias do IFGW-->
+            <div cass="RSS">
+            <h2 class="digitacao">Destaques • IFGW</h2>
+            <rssapp-list id="yQpV9Rte9td5ZtbV"></rssapp-list><script src="https://widget.rss.app/v1/list.js" type="text/javascript" async></script>            </div>
+            <!--Bootstrap dos Sites publicados, (Para adicionar uma nova letra basta clonar uma '<div class="accordion-item">'-->
+
+            <div class="accordion accordion-flush" id="accordionFlushExample0">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingMASTER">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseMASTER" aria-expanded="false" aria-controls="flush-collapseMASTER">
+                            <a class="links"> Sites publicados</a>
+                        </button>
+                    </h2>
+                    <div id="flush-collapseMASTER" class="accordion-collapse collapse" aria-labelledby="flush-headingMASTER" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                            <div class="accordion accordion-flush" id="accordionFlushExample">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="flush-headingOne">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                                            <a class="links">Números</a>
+                                        </button>
+                                    </h2>
+                                    <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                        <div class="accordion-body">
+                                            <li><a href="http://sites.ifi.unicamp.br/1d-nano-app-2020/">sites.ifi.unicamp.br/1d-nano-app-2020/</a></li>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="flush-headingTwo">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                                            <a class="links">A</a>
+                                        </button>
+                                    </h2>
+                                    <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                                        <div class="accordion-body">
+                                            <li><a href="http://sites.ifi.unicamp.br/aantone/">sites.ifi.unicamp.br/aantone/</a></li>
+                                            <li><a href="http://sites.ifi.unicamp.br/afonseca/">sites.ifi.unicamp.br/afonseca/</a></li>
+                                            <li><a href="http://sites.ifi.unicamp.br/aguiar/">sites.ifi.unicamp.br/aguiar/</a></li>
+                                            <li><a href="http://sites.ifi.unicamp.br/aguilar/">sites.ifi.unicamp.br/aguilar/</a></li>
+                                            <li><a href="http://sites.ifi.unicamp.br/alegre/">sites.ifi.unicamp.br/alegre/</a></li>
+                                            <li><a href="http://sites.ifi.unicamp.br/alvarez/">sites.ifi.unicamp.br/alvarez/</a></li>
+                                            <li><a href="http://sites.ifi.unicamp.br/apgf/">sites.ifi.unicamp.br/apgf/</a></li>
+                                            <li><a href="http://sites.ifi.unicamp.br/araujo/">sites.ifi.unicamp.br/araujo/</a></li>
+                                            <li><a href="http://sites.ifi.unicamp.br/asiervo/">sites.ifi.unicamp.br/asiervo/</a></li>
+                                            <li><a href="http://sites.ifi.unicamp.br/athomaz/">sites.ifi.unicamp.br/athomaz/</a></li>
+                                            <li><a href="http://sites.ifi.unicamp.br/autretos/">sites.ifi.unicamp.br/autretos/</a></li>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="flush-headingThree">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                                            <a class="links">B</a>
+                                        </button>
+                                    </h2>
+                                    <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                                        <div class="accordion-body">
+                                            <li><a href="http://sites.ifi.unicamp.br/brasil/">sites.ifi.unicamp.br/brasil/</a></li>
+                                            <li><a href="http://sites.ifi.unicamp.br/brito/">sites.ifi.unicamp.br/brito/</a></li>
+                                            <li><a href="http://sites.ifi.unicamp.br/brum/">sites.ifi.unicamp.br/brum/</a></li>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="flush-heading4">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse4" aria-expanded="false" aria-controls="flush-collapse4">
+                                            <a class="links">C</a>
+                                        </button>
+                                    </h2>
+                                    <div id="flush-collapse4" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                                        <div class="accordion-body">
+                                            <li><a href="http://sites.ifi.unicamp.br/cabrera/">sites.ifi.unicamp.br/cabrera/</a></li>
+                                            <li><a href="http://sites.ifi.unicamp.br/caldeira/">sites.ifi.unicamp.br/caldeira/</a></li>
+                                            <li><a href="http://sites.ifi.unicamp.br/cardoso/">sites.ifi.unicamp.br/cardoso/</a></li>
+                                            <li><a href="http://sites.ifi.unicamp.br/carola/">sites.ifi.unicamp.br/carola/</a></li>
+                                            <li><a href="http://sites.ifi.unicamp.br/cdeneke/">sites.ifi.unicamp.br/cdeneke/</a></li>
+                                            <li><a href="http://sites.ifi.unicamp.br/cernmasterclass/">sites.ifi.unicamp.br/cernmasterclass/</a></li>
+                                            <li><a href="http://sites.ifi.unicamp.br/cesar/">sites.ifi.unicamp.br/cesar/</a></li>
+                                            <li><a href="http://sites.ifi.unicamp.br/chapter/">sites.ifi.unicamp.br/chapter/</a></li>
+                                            <li><a href="http://sites.ifi.unicamp.br/chinella/">sites.ifi.unicamp.br/chinella/</a></li>
+                                            <li><a href="http://sites.ifi.unicamp.br/cipaifgw/">sites.ifi.unicamp.br/cipaifgw/</a></li>
+                                            <li><a href="http://sites.ifi.unicamp.br/claitono/">sites.ifi.unicamp.br/claitono/</a></li>
+                                            <li><a href="http://sites.ifi.unicamp.br/cluster-planck/">sites.ifi.unicamp.br/cluster-planck/</a></li>
+                                            <li><a href="http://sites.ifi.unicamp.br/cosmologia/">sites.ifi.unicamp.br/cosmologia/</a></li>
+                                            <li><a href="http://sites.ifi.unicamp.br/covolan/">sites.ifi.unicamp.br/covolan/</a></li>
+                                            <li><a href="http://sites.ifi.unicamp.br/criogenia/">sites.ifi.unicamp.br/criogenia/</a></li>
+                                            <li><a href="http://sites.ifi.unicamp.br/cronologia/">sites.ifi.unicamp.br/cronologia/</a></li>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="flush-heading5">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse5" aria-expanded="false" aria-controls="flush-collapse5">
+                                            <a class="links">D</a>
+                                        </button>
+                                    </h2>
+                                    <div id="flush-collapse5" class="accordion-collapse collapse" aria-labelledby="flush-heading5" data-bs-parent="#accordionFlushExample">
+                                        <div class="accordion-body">
+                                            <li><a href="http://sites.ifi.unicamp.br/dainese/">sites.ifi.unicamp.br/dainese/</a></li>
+                                            <li><a href="http://sites.ifi.unicamp.br/dekoning/">sites.ifi.unicamp.br/dekoning/</a></li>
+                                            <li><a href="http://sites.ifi.unicamp.br/delima/">sites.ifi.unicamp.br/delima/</a></li>
+                                            <li><a href="http://sites.ifi.unicamp.br/dmugarte/">sites.ifi.unicamp.br/dmugarte/</a></li>
+                                            <li><a href="http://sites.ifi.unicamp.br/dmuraca/">sites.ifi.unicamp.br/dmuraca/</a></li>
+                                            <li><a href="http://sites.ifi.unicamp.br/doretto/">sites.ifi.unicamp.br/doretto/</a></li>
+                                            <li><a href="http://sites.ifi.unicamp.br/drcc/">sites.ifi.unicamp.br/drcc/</a></li>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="flush-heading6">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse6" aria-expanded="false" aria-controls="flush-collapse6">
+                                            <a class="links">E</a>
+                                        </button>
+                                    </h2>
+                                    <div id="flush-collapse6" class="accordion-collapse collapse" aria-labelledby="flush-heading6" data-bs-parent="#accordionFlushExample">
+                                        <div class="accordion-body">
+                                            <li><a href="http://sites.ifi.unicamp.br/egranado/">sites.ifi.unicamp.br/egranado/</a></li>
+                                            <li><a href="http://sites.ifi.unicamp.br/emiranda/">sites.ifi.unicamp.br/emiranda/</a></li>
+                                            <li><a href="http://sites.ifi.unicamp.br/ensino/">sites.ifi.unicamp.br/ensino/</a></li>
+                                            <li><a href="http://sites.ifi.unicamp.br/escolasdeinverno/">sites.ifi.unicamp.br/escolasdeinverno/</a></li>
+                                            <li><a href="http://sites.ifi.unicamp.br/ettore/">sites.ifi.unicamp.br/ettore/</a></li>
+                                            <li><a href="http://sites.ifi.unicamp.br/extreme/">sites.ifi.unicamp.br/extreme/</a></li>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="flush-heading7">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse7" aria-expanded="false" aria-controls="flush-collapse7">
+                                            <a class="links">F</a>
+                                        </button>
+                                    </h2>
+                                    <div id="flush-collapse7" class="accordion-collapse collapse" aria-labelledby="flush-heading7" data-bs-parent="#accordionFlushExample">
+                                        <div class="accordion-body">
+                                            <li><a href="http://sites.ifi.unicamp.br/f128/">sites.ifi.unicamp.br/f128/</a></li>
+                                            <li><a href="http://sites.ifi.unicamp.br/f328/">sites.ifi.unicamp.br/f328/</a></li>
+                                            <li><a href="http://sites.ifi.unicamp.br/f429/">sites.ifi.unicamp.br/f429/</a></li>
+                                            <li><a href="http://sites.ifi.unicamp.br/fandri/">sites.ifi.unicamp.br/fandri/</a></li>
+                                            <li><a href="http://sites.ifi.unicamp.br/fbarbosa/">sites.ifi.unicamp.br/fbarbosa/</a></li>
+                                            <li><a href="http://sites.ifi.unicamp.br/fberon/">sites.ifi.unicamp.br/fberon/</a></li>
+                                            <li><a href="http://sites.ifi.unicamp.br/feiradeprojetos/">sites.ifi.unicamp.br/feiradeprojetos/</a></li>
+                                            <li><a href="http://sites.ifi.unicamp.br/fenomenos-emergentes-sistemas-dimensoes-reduzidas/">sites.ifi.unicamp.br/fenomenos-emergentes-sistemas-dimensoes-reduzidas/</a></li>
+                                            <li><a href="http://sites.ifi.unicamp.br/fgarcia/">sites.ifi.unicamp.br/fgarcia/</a></li>
+                                            <li><a href="http://sites.ifi.unicamp.br/fife/">sites.ifi.unicamp.br/fife/</a></li>
+                                            <li><a href="http://sites.ifi.unicamp.br/fisica-para-curiosos/">sites.ifi.unicamp.br/fisica-para-curiosos/</a></li>
+                                            <li><a href="http://sites.ifi.unicamp.br/fotonicom/">sites.ifi.unicamp.br/fotonicom/</a></li>
+                                            <li><a href="http://sites.ifi.unicamp.br/fratesch/">sites.ifi.unicamp.br/fratesch/</a></li>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="flush-heading8">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse8" aria-expanded="false" aria-controls="flush-collapse8">
+                                            <a class="links">G</a>
+                                        </button>
+                                    </h2>
+                                    <div id="flush-collapse8" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                                        <div class="accordion-body">
+                                            <li><a href="http://sites.ifi.unicamp.br/gabriela/">sites.ifi.unicamp.br/gabriela/</a></li>
+                                            <li><a href="http://sites.ifi.unicamp.br/galvao/">sites.ifi.unicamp.br/galvao/</a></li>
+                                            <li><a href="http://sites.ifi.unicamp.br/gasco/">sites.ifi.unicamp.br/gasco/</a></li>
+                                            <li><a href="http://sites.ifi.unicamp.br/gefan/">sites.ifi.unicamp.br/gefan/</a></li>
+                                            <li><a href="http://sites.ifi.unicamp.br/gfrmd/">sites.ifi.unicamp.br/gfrmd/</a></li>
+                                            <li><a href="http://sites.ifi.unicamp.br/gfs/">sites.ifi.unicamp.br/gfs/</a></li>
+                                            <li><a href="http://sites.ifi.unicamp.br/gfurco/">sites.ifi.unicamp.br/gfurco/</a></li>
+                                            <li><a href="http://sites.ifi.unicamp.br/giles/">sites.ifi.unicamp.br/giles/</a></li>
+                                            <li><a href="http://sites.ifi.unicamp.br/gla/">sites.ifi.unicamp.br/gla/</a></li>
+                                            <li><a href="http://sites.ifi.unicamp.br/gmfa/">sites.ifi.unicamp.br/gmfa/</a></li>
+                                            <li><a href="http://sites.ifi.unicamp.br/goes/">sites.ifi.unicamp.br/goes/</a></li>
+                                            <li><a href="http://sites.ifi.unicamp.br/gpo/">sites.ifi.unicamp.br/gpo/</a></li>
+                                            <li><a href="http://sites.ifi.unicamp.br/gpoms/">sites.ifi.unicamp.br/gpoms/</a></li>
+                                            <li><a href="http://sites.ifi.unicamp.br/graduacao/">sites.ifi.unicamp.br/graduacao/</a></li>
+                                            <li><a href="http://sites.ifi.unicamp.br/gsonm/">sites.ifi.unicamp.br/gsonm/</a></li>
+                                            <li><a href="http://sites.ifi.unicamp.br/gustavo/">sites.ifi.unicamp.br/gustavo/</a></li>
+                                            <li><a href="http://sites.ifi.unicamp.br/guzzo/">sites.ifi.unicamp.br/guzzo/</a></li>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="flush-heading9">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse9" aria-expanded="false" aria-controls="flush-collapse9">
+                                            <a class="links">H</a>
+                                        </button>
+                                    </h2>
+                                    <div id="flush-collapse9" class="accordion-collapse collapse" aria-labelledby="flush-heading9" data-bs-parent="#accordionFlushExample">
+                                        <div class="accordion-body">
+                                            <li><a href="http://sites.ifi.unicamp.br/hadler/">sites.ifi.unicamp.br/hadler/</a></li>
+                                            <li><a href="http://sites.ifi.unicamp.br/hadrex/">sites.ifi.unicamp.br/hadrex/</a></li>
+                                            <li><a href="http://sites.ifi.unicamp.br/holanda/">sites.ifi.unicamp.br/holanda/</a></li>
+                                            <li><a href="http://sites.ifi.unicamp.br/hpc/">sites.ifi.unicamp.br/hpc/</a></li>
+                                            <li><a href="http://sites.ifi.unicamp.br/hugo/">sites.ifi.unicamp.br/hugo/</a></li>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="flush-heading10">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse10" aria-expanded="false" aria-controls="flush-collapse10">
+                                            <a class="links">I</a>
+                                        </button>
+                                    </h2>
+                                    <div id="flush-collapse10" class="accordion-collapse collapse" aria-labelledby="flush-heading10" data-bs-parent="#accordionFlushExample">
+                                        <div class="accordion-body">
+                                            <li><a href="http://sites.ifi.unicamp.br/iienfi/">sites.ifi.unicamp.br/iienfi/</a></li>
+                                            <li><a href="http://sites.ifi.unicamp.br/iikawa/">sites.ifi.unicamp.br/iikawa/</a></li>
+                                            <li><a href="http://sites.ifi.unicamp.br/imre/">sites.ifi.unicamp.br/imre/</a></li>
+                                            <li><a href="http://sites.ifi.unicamp.br/inctiq/">sites.ifi.unicamp.br/inctiq/</a></li>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="flush-heading11">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse11" aria-expanded="false" aria-controls="flush-collapse11">
+                                            <a class="links">K</a>
+                                        </button>
+                                    </h2>
+                                    <div id="flush-collapse11" class="accordion-collapse collapse" aria-labelledby="flush-heading11" data-bs-parent="#accordionFlushExample">
+                                        <div class="accordion-body">
+                                            <li><a href="http://sites.ifi.unicamp.br/kemp/">sites.ifi.unicamp.br/kemp/</a></li>
+                                            <li><a href="http://sites.ifi.unicamp.br/kitsf429/">sites.ifi.unicamp.br/kitsf429/</a></li>
+                                            <li><a href="http://sites.ifi.unicamp.br/kleinke/">sites.ifi.unicamp.br/kleinke/</a></li>
+                                            <li><a href="http://sites.ifi.unicamp.br/knobel/">sites.ifi.unicamp.br/knobel/</a></li>
+                                            <li><a href="http://sites.ifi.unicamp.br/kopel/">sites.ifi.unicamp.br/kopel/</a></li>
+                                            <li><a href="http://sites.ifi.unicamp.br/krpirota/">sites.ifi.unicamp.br/krpirota/</a></li>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="flush-heading12">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse12" aria-expanded="false" aria-controls="flush-collapse12">
+                                            <a class="links">L</a>
+                                        </button>
+                                    </h2>
+                                    <div id="flush-collapse12" class="accordion-collapse collapse" aria-labelledby="flush-heading12" data-bs-parent="#accordionFlushExample">
+                                        <div class="accordion-body">
+                                            <li><a href="http://sites.ifi.unicamp.br/labeletro/">sites.ifi.unicamp.br/labeletro/</a></li>
+                                            <li><a href="http://sites.ifi.unicamp.br/laboptica/">sites.ifi.unicamp.br/laboptica/</a></li>
+                                            <li><a href="http://sites.ifi.unicamp.br/labraiox/">sites.ifi.unicamp.br/labraiox/</a></li>
+                                            <li><a href="http://sites.ifi.unicamp.br/labvacrio/">sites.ifi.unicamp.br/labvacrio/</a></li>
+                                            <li><a href="http://sites.ifi.unicamp.br/lafe/">sites.ifi.unicamp.br/lafe/</a></li>
+                                            <li><a href="http://sites.ifi.unicamp.br/lagobra/">sites.ifi.unicamp.br/lagobra/</a></li>
+                                            <li><a href="http://sites.ifi.unicamp.br/laks/">sites.ifi.unicamp.br/laks/</a></li>
+                                            <li><a href="http://sites.ifi.unicamp.br/lamult/">sites.ifi.unicamp.br/lamult/</a></li>
+                                            <li><a href="http://sites.ifi.unicamp.br/lcordtez/">sites.ifi.unicamp.br/lcordtez/</a></li>
+                                            <li><a href="http://sites.ifi.unicamp.br/lei-leb/">sites.ifi.unicamp.br/lei-leb/</a></li>
+                                            <li><a href="http://sites.ifi.unicamp.br/lep/">sites.ifi.unicamp.br/lep/</a></li>
+                                            <li><a href="http://sites.ifi.unicamp.br/leptons/">sites.ifi.unicamp.br/leptons/</a></li>
+                                            <li><a href="http://sites.ifi.unicamp.br/lfmedica/">sites.ifi.unicamp.br/lfmedica/</a></li>
+                                            <li><a href="http://sites.ifi.unicamp.br/lfmoderna/">sites.ifi.unicamp.br/lfmoderna/</a></li>
+                                            <li><a href="http://sites.ifi.unicamp.br/lh2ennio/">sites.ifi.unicamp.br/lh2ennio/</a></li>
+                                            <li><a href="http://sites.ifi.unicamp.br/lhlima/">sites.ifi.unicamp.br/lhlima/</a></li>
+                                            <li><a href="http://sites.ifi.unicamp.br/lmbt/">sites.ifi.unicamp.br/lmbt/</a></li>
+                                            <li><a href="http://sites.ifi.unicamp.br/lmd/">sites.ifi.unicamp.br/lmd/</a></li>
+                                            <li><a href="http://sites.ifi.unicamp.br/lni/">sites.ifi.unicamp.br/lni/</a></li>
+                                            <li><a href="http://sites.ifi.unicamp.br/lpcm/">sites.ifi.unicamp.br/lpcm/</a></li>
+                                            <li><a href="http://sites.ifi.unicamp.br/lpd/">sites.ifi.unicamp.br/lpd/</a></li>
+                                            <li><a href="http://sites.ifi.unicamp.br/lunazzi/">sites.ifi.unicamp.br/lunazzi/</a></li>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="flush-heading13">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse13" aria-expanded="false" aria-controls="flush-collapse13">
+                                            <a class="links">M</a>
+                                        </button>
+                                    </h2>
+                                    <div id="flush-collapse13" class="accordion-collapse collapse" aria-labelledby="flush-heading13" data-bs-parent="#accordionFlushExample">
+                                        <div class="accordion-body">
+                                            <li><a href="http://sites.ifi.unicamp.br/mabernal/">sites.ifi.unicamp.br/mabernal/</a></li>
+                                            <li><a href="http://sites.ifi.unicamp.br/machado/">sites.ifi.unicamp.br/machado/</a></li>
+                                            <li><a href="http://sites.ifi.unicamp.br/maicon/">sites.ifi.unicamp.br/maicon/</a></li>
+                                            <li><a href="http://sites.ifi.unicamp.br/maplima/">sites.ifi.unicamp.br/maplima/</a></li>
+                                            <li><a href="http://sites.ifi.unicamp.br/marcosoliveira/">sites.ifi.unicamp.br/marcosoliveira/</a></li>
+                                            <li><a href="http://sites.ifi.unicamp.br/marques/">sites.ifi.unicamp.br/marques/</a></li>
+                                            <li><a href="http://sites.ifi.unicamp.br/mbonanca/">sites.ifi.unicamp.br/mbonanca/</a></li>
+                                            <li><a href="http://sites.ifi.unicamp.br/menon/">sites.ifi.unicamp.br/menon/</a></li>
+                                            <li><a href="http://sites.ifi.unicamp.br/modelodocente/">sites.ifi.unicamp.br/modelodocente/</a></li>
+                                            <li><a href="http://sites.ifi.unicamp.br/modeloevento/">sites.ifi.unicamp.br/modeloevento/</a></li>
+                                            <li><a href="http://sites.ifi.unicamp.br/modelogrupo/">sites.ifi.unicamp.br/modelogrupo/</a></li>
+                                            <li><a href="http://sites.ifi.unicamp.br/monica/">sites.ifi.unicamp.br/monica/</a></li>
+                                            <li><a href="http://sites.ifi.unicamp.br/mtamash/">sites.ifi.unicamp.br/mtamash/</a></li>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="flush-heading14">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse14" aria-expanded="false" aria-controls="flush-collapse14">
+                                            <a class="links">N</a>
+                                        </button>
+                                    </h2>
+                                    <div id="flush-collapse14" class="accordion-collapse collapse" aria-labelledby="flush-heading14" data-bs-parent="#accordionFlushExample">
+                                        <div class="accordion-body">
+                                            <li><a href="http://sites.ifi.unicamp.br/nanophoton/">sites.ifi.unicamp.br/nanophoton/</a></li>
+                                            <li><a href="http://sites.ifi.unicamp.br/neurofisica/">sites.ifi.unicamp.br/neurofisica/</a></li>
+                                            <li><a href="http://sites.ifi.unicamp.br/neutrons/">sites.ifi.unicamp.br/neutrons/</a></li>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="flush-heading15">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse15" aria-expanded="false" aria-controls="flush-collapse15">
+                                            <a class="links">O</a>
+                                        </button>
+                                    </h2>
+                                    <div id="flush-collapse15" class="accordion-collapse collapse" aria-labelledby="flush-heading15" data-bs-parent="#accordionFlushExample">
+                                        <div class="accordion-body">
+                                            <li><a href="http://sites.ifi.unicamp.br/odilon/">sites.ifi.unicamp.br/odilon/</a></li>
+                                            <li><a href="http://sites.ifi.unicamp.br/optica/">sites.ifi.unicamp.br/optica/</a></li>
+                                            <li><a href="http://sites.ifi.unicamp.br/orlando/">sites.ifi.unicamp.br/orlando/</a></li>
+                                            <li><a href="http://sites.ifi.unicamp.br/osa/">sites.ifi.unicamp.br/osa/</a></li>
+                                            <li><a href="http://sites.ifi.unicamp.br/oteschke/">sites.ifi.unicamp.br/oteschke/</a></li>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="flush-heading16">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse16" aria-expanded="false" aria-controls="flush-collapse16">
+                                            <a class="links">P</a>
+                                        </button>
+                                    </h2>
+                                    <div id="flush-collapse16" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                                        <div class="accordion-body">
+                                            <li><a href="http://sites.ifi.unicamp.br/padilha/">sites.ifi.unicamp.br/padilha/</a></li>
+                                            <li><a href="http://sites.ifi.unicamp.br/pagliuso/">sites.ifi.unicamp.br/pagliuso/</a></li>
+                                            <li><a href="http://sites.ifi.unicamp.br/paixao/">sites.ifi.unicamp.br/paixao/</a></li>
+                                            <li><a href="http://sites.ifi.unicamp.br/paulasc/">sites.ifi.unicamp.br/paulasc/</a></li>
+                                            <li><a href="http://sites.ifi.unicamp.br/pereira/">sites.ifi.unicamp.br/pereira/</a></li>
+                                            <li><a href="http://sites.ifi.unicamp.br/photonicamp/">sites.ifi.unicamp.br/photonicamp/</a></li>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="flush-heading17">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse17" aria-expanded="false" aria-controls="flush-collapse17">
+                                            <a class="links">Q</a>
+                                        </button>
+                                    </h2>
+                                    <div id="flush-collapse17" class="accordion-collapse collapse" aria-labelledby="flush-heading17" data-bs-parent="#accordionFlushExample">
+                                        <div class="accordion-body">
+                                            <li><a href="http://sites.ifi.unicamp.br/qcd-tnt4/">sites.ifi.unicamp.br/qcd-tnt4/</a></li>
+                                            <li><a href="http://sites.ifi.unicamp.br/qinfunicamp/">sites.ifi.unicamp.br/qinfunicamp/</a></li>
+                                            <li><a href="http://sites.ifi.unicamp.br/qts/">sites.ifi.unicamp.br/qts/</a></li>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="flush-heading18">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse18" aria-expanded="false" aria-controls="flush-collapse18">
+                                            <a class="links">R</a>
+                                        </button>
+                                    </h2>
+                                    <div id="flush-collapse18" class="accordion-collapse collapse" aria-labelledby="flush-heading18" data-bs-parent="#accordionFlushExample">
+                                        <div class="accordion-body">
+                                            <li><a href="http://sites.ifi.unicamp.br/rabelo/">sites.ifi.unicamp.br/rabelo/</a></li>
+                                            <li><a href="http://sites.ifi.unicamp.br/raios-cosmicos/">sites.ifi.unicamp.br/raios-cosmicos/</a></li>
+                                            <li><a href="http://sites.ifi.unicamp.br/rbmerlo/">sites.ifi.unicamp.br/rbmerlo/</a></li>
+                                            <li><a href="http://sites.ifi.unicamp.br/retinhaxxv/">sites.ifi.unicamp.br/retinhaxxv/</a></li>
+                                            <li><a href="http://sites.ifi.unicamp.br/rickson/">sites.ifi.unicamp.br/rickson/</a></li>
+                                            <li><a href="http://sites.ifi.unicamp.br/rouxinol/">sites.ifi.unicamp.br/rouxinol/</a></li>
+                                            <li><a href="http://sites.ifi.unicamp.br/roversi/">sites.ifi.unicamp.br/roversi/</a></li>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="flush-heading19">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse19" aria-expanded="false" aria-controls="flush-collapse19">
+                                            <a class="links">S</a>
+                                        </button>
+                                    </h2>
+                                    <div id="flush-collapse19" class="accordion-collapse collapse" aria-labelledby="flush-heading19" data-bs-parent="#accordionFlushExample">
+                                        <div class="accordion-body">
+                                            <li><a href="http://sites.ifi.unicamp.br/sbef2017/">sites.ifi.unicamp.br/sbef2017/</a></li>
+                                            <li><a href="http://sites.ifi.unicamp.br/soares/">sites.ifi.unicamp.br/soares/</a></li>
+                                            <li><a href="http://sites.ifi.unicamp.br/sobreira/">sites.ifi.unicamp.br/sobreira/</a></li>
+                                            <li><a href="http://sites.ifi.unicamp.br/spsasnano/">sites.ifi.unicamp.br/spsasnano/</a></li>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="flush-heading20">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse20" aria-expanded="false" aria-controls="flush-collapseThree">
+                                            <a class="links">T</a>
+                                        </button>
+                                    </h2>
+                                    <div id="flush-collapse20" class="accordion-collapse collapse" aria-labelledby="flush-heading20" data-bs-parent="#accordionFlushExample">
+                                        <div class="accordion-body">
+                                            <li><a href="http://sites.ifi.unicamp.br/takahashi/">sites.ifi.unicamp.br/takahashi/</a></li>
+                                            <li><a href="http://sites.ifi.unicamp.br/tessler/">sites.ifi.unicamp.br/tessler/</a></li>
+                                            <li><a href="http://sites.ifi.unicamp.br/torrieri/">sites.ifi.unicamp.br/torrieri/</a></li>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="flush-heading21">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse21" aria-expanded="false" aria-controls="flush-collapse21">
+                                            <a class="links">U</a>
+                                        </button>
+                                    </h2>
+                                    <div id="flush-collapse21" class="accordion-collapse collapse" aria-labelledby="flush-heading21" data-bs-parent="#accordionFlushExample">
+                                        <div class="accordion-body">
+                                            <li><a href="http://sites.ifi.unicamp.br/upaifgw/">sites.ifi.unicamp.br/upaifgw/</a></li>
+                                            <li><a href="http://sites.ifi.unicamp.br/urbano/">sites.ifi.unicamp.br/urbano/</a></li>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="flush-heading22">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse22" aria-expanded="false" aria-controls="flush-collapse22">
+                                            <a class="links">V</a>
+                                        </button>
+                                    </h2>
+                                    <div id="flush-collapse22" class="accordion-collapse collapse" aria-labelledby="flush-heading22" data-bs-parent="#accordionFlushExample">
+                                        <div class="accordion-body">
+                                            <li><a href="http://sites.ifi.unicamp.br/varlei/">sites.ifi.unicamp.br/varlei/</a></li>
+                                            <li><a href="http://sites.ifi.unicamp.br/veraoifgw/">sites.ifi.unicamp.br/veraoifgw/</a></li>
+                                            <li><a href="http://sites.ifi.unicamp.br/vidiella/">sites.ifi.unicamp.br/vidiella/</a></li>
+                                            <li><a href="http://sites.ifi.unicamp.br/vitiello/">sites.ifi.unicamp.br/vitiello/</a></li>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="flush-heading23">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse23" aria-expanded="false" aria-controls="flush-collapse23">
+                                            <a class="links">W</a>
+                                        </button>
+                                    </h2>
+                                    <div id="flush-collapse23" class="accordion-collapse collapse" aria-labelledby="flush-heading23" data-bs-parent="#accordionFlushExample">
+                                        <div class="accordion-body">
+                                            <li><a href="http://sites.ifi.unicamp.br/wpcct2020/">sites.ifi.unicamp.br/wpcct2020/</a></li>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="flush-heading24">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse24" aria-expanded="false" aria-controls="flush-collapse24">
+                                            <a class="links">Z</a>
+                                        </button>
+                                    </h2>
+                                    <div id="flush-collapse24" class="accordion-collapse collapse" aria-labelledby="flush-heading24" data-bs-parent="#accordionFlushExample">
+                                        <div class="accordion-body">
+                                            <li><a href="http://sites.ifi.unicamp.br/zacarias/">sites.ifi.unicamp.br/zacarias/</a></li>
+                                            <li><a href="http://sites.ifi.unicamp.br/zagonel/">sites.ifi.unicamp.br/zagonel/</a></li>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="javascript.js">    </script>
+<footer class="footer">
+    <div class="footer-content">
+        <img class="img-footer" src="https://i.ibb.co/yYHGT6C/unicamp-logo.png" border="0">
+        <p class="footer-advice">Este site não é uma publicação oficial do IFGW, acesse <a class="footer-advice" href="https://portal.ifi.unicamp.br">www.ifi.unicamp.br</a> para a versão institucional.
+            A responsabilidade por seu conteúdo é exclusivamente do autor.</p>
+        <ul class="socials">
+                <button  type="button" class="btn btn-outline-danger">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                        <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path>
+                    </svg>
+                    <a class="github" href="https://github.com/JohnVRMDev">GITHUB • JOHN</a>
+                </button>
+        </ul>
+    </div>
+</footer>
+</body>
+</html>
