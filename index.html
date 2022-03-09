@@ -8,8 +8,11 @@
     <title>Sites do IFGW</title>
 </head>
 <body>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Gidugu&display=swap');
+    </style>
     <header id="header">
-        <img class="logo" src="https://i.ibb.co/x1NQBTm/ifgw-branco.png" alt="logo" height="35" width="70">
+        <span></span>
         <nav id="nav">
             <button id="btn-mobile" aria-label="Abrir Menu" aria-haspopup="true" aria-controls="menu" aria-expanded="false">
                 <span id="hamburguer"></span>
@@ -28,505 +31,220 @@
             </ul>
         </nav>
     </header>
-    <section>
-
-    </section>
-
-    <section class="grid">
-        <div class="noticias">
-            <!-- Titulo e efeito de digitação-->
-            <div>
-                <img class="logoifgw"src="https://i.ibb.co/r6JBGV2/VETOR-b.png" alt="VETOR-b" border="0">
-
-            </div>
-            <div>
-
-                <h2 class="digitacao">Um Blog do Instituto de Física "Gleb Wataghin"</h2>
-                <script>
-                    function typeWrite(elemento) {
-                        const textoArray = elemento.innerHTML.split('');
-                        elemento.innerHTML ='';
-                        textoArray.forEach((letra, i) => {
-                            setTimeout(function() {
-                                elemento.innerHTML+= letra;
-                            }, 100* i)
-                        });
-                    }
-
-                     const titulo= document.querySelector('.digitacao');
-                     typeWrite(titulo);
-                </script>
-            </div>
-
+    <script src="javascript.js"></script>
+    <main>
+        <div class="titulo">
+            <h2 class="principal">Sites do IFGW</h2>
         </div>
-        <div class="sidebar">
-            <!--RSS noticias do IFGW-->
-            
-            <!--Bootstrap dos Sites publicados, (Para adicionar uma nova letra basta clonar uma '<div class="accordion-item">'-->
-
-            <div class="accordion accordion-flush" id="accordionFlushExample0">
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="flush-headingMASTER">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseMASTER" aria-expanded="false" aria-controls="flush-collapseMASTER">
-                            <a class="links"> Sites publicados</a>
-                        </button>
-                    </h2>
-                    <div id="flush-collapseMASTER" class="accordion-collapse collapse" aria-labelledby="flush-headingMASTER" data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body">
-                            <div class="accordion accordion-flush" id="accordionFlushExample">
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header" id="flush-headingOne">
-                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                                            <a class="links">Números</a>
-                                        </button>
-                                    </h2>
-                                    <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-                                        <div class="accordion-body">
-                                            <li><a href="http://sites.ifi.unicamp.br/1d-nano-app-2020/">sites.ifi.unicamp.br/1d-nano-app-2020/</a></li>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header" id="flush-headingTwo">
-                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-                                            <a class="links">A</a>
-                                        </button>
-                                    </h2>
-                                    <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
-                                        <div class="accordion-body">
-                                            <li><a href="http://sites.ifi.unicamp.br/aantone/">sites.ifi.unicamp.br/aantone/</a></li>
-                                            <li><a href="http://sites.ifi.unicamp.br/afonseca/">sites.ifi.unicamp.br/afonseca/</a></li>
-                                            <li><a href="http://sites.ifi.unicamp.br/aguiar/">sites.ifi.unicamp.br/aguiar/</a></li>
-                                            <li><a href="http://sites.ifi.unicamp.br/aguilar/">sites.ifi.unicamp.br/aguilar/</a></li>
-                                            <li><a href="http://sites.ifi.unicamp.br/alegre/">sites.ifi.unicamp.br/alegre/</a></li>
-                                            <li><a href="http://sites.ifi.unicamp.br/alvarez/">sites.ifi.unicamp.br/alvarez/</a></li>
-                                            <li><a href="http://sites.ifi.unicamp.br/apgf/">sites.ifi.unicamp.br/apgf/</a></li>
-                                            <li><a href="http://sites.ifi.unicamp.br/araujo/">sites.ifi.unicamp.br/araujo/</a></li>
-                                            <li><a href="http://sites.ifi.unicamp.br/asiervo/">sites.ifi.unicamp.br/asiervo/</a></li>
-                                            <li><a href="http://sites.ifi.unicamp.br/athomaz/">sites.ifi.unicamp.br/athomaz/</a></li>
-                                            <li><a href="http://sites.ifi.unicamp.br/autretos/">sites.ifi.unicamp.br/autretos/</a></li>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header" id="flush-headingThree">
-                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-                                            <a class="links">B</a>
-                                        </button>
-                                    </h2>
-                                    <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
-                                        <div class="accordion-body">
-                                            <li><a href="http://sites.ifi.unicamp.br/brasil/">sites.ifi.unicamp.br/brasil/</a></li>
-                                            <li><a href="http://sites.ifi.unicamp.br/brito/">sites.ifi.unicamp.br/brito/</a></li>
-                                            <li><a href="http://sites.ifi.unicamp.br/brum/">sites.ifi.unicamp.br/brum/</a></li>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header" id="flush-heading4">
-                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse4" aria-expanded="false" aria-controls="flush-collapse4">
-                                            <a class="links">C</a>
-                                        </button>
-                                    </h2>
-                                    <div id="flush-collapse4" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
-                                        <div class="accordion-body">
-                                            <li><a href="http://sites.ifi.unicamp.br/cabrera/">sites.ifi.unicamp.br/cabrera/</a></li>
-                                            <li><a href="http://sites.ifi.unicamp.br/caldeira/">sites.ifi.unicamp.br/caldeira/</a></li>
-                                            <li><a href="http://sites.ifi.unicamp.br/cardoso/">sites.ifi.unicamp.br/cardoso/</a></li>
-                                            <li><a href="http://sites.ifi.unicamp.br/carola/">sites.ifi.unicamp.br/carola/</a></li>
-                                            <li><a href="http://sites.ifi.unicamp.br/cdeneke/">sites.ifi.unicamp.br/cdeneke/</a></li>
-                                            <li><a href="http://sites.ifi.unicamp.br/cernmasterclass/">sites.ifi.unicamp.br/cernmasterclass/</a></li>
-                                            <li><a href="http://sites.ifi.unicamp.br/cesar/">sites.ifi.unicamp.br/cesar/</a></li>
-                                            <li><a href="http://sites.ifi.unicamp.br/chapter/">sites.ifi.unicamp.br/chapter/</a></li>
-                                            <li><a href="http://sites.ifi.unicamp.br/chinella/">sites.ifi.unicamp.br/chinella/</a></li>
-                                            <li><a href="http://sites.ifi.unicamp.br/cipaifgw/">sites.ifi.unicamp.br/cipaifgw/</a></li>
-                                            <li><a href="http://sites.ifi.unicamp.br/claitono/">sites.ifi.unicamp.br/claitono/</a></li>
-                                            <li><a href="http://sites.ifi.unicamp.br/cluster-planck/">sites.ifi.unicamp.br/cluster-planck/</a></li>
-                                            <li><a href="http://sites.ifi.unicamp.br/cosmologia/">sites.ifi.unicamp.br/cosmologia/</a></li>
-                                            <li><a href="http://sites.ifi.unicamp.br/covolan/">sites.ifi.unicamp.br/covolan/</a></li>
-                                            <li><a href="http://sites.ifi.unicamp.br/criogenia/">sites.ifi.unicamp.br/criogenia/</a></li>
-                                            <li><a href="http://sites.ifi.unicamp.br/cronologia/">sites.ifi.unicamp.br/cronologia/</a></li>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header" id="flush-heading5">
-                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse5" aria-expanded="false" aria-controls="flush-collapse5">
-                                            <a class="links">D</a>
-                                        </button>
-                                    </h2>
-                                    <div id="flush-collapse5" class="accordion-collapse collapse" aria-labelledby="flush-heading5" data-bs-parent="#accordionFlushExample">
-                                        <div class="accordion-body">
-                                            <li><a href="http://sites.ifi.unicamp.br/dainese/">sites.ifi.unicamp.br/dainese/</a></li>
-                                            <li><a href="http://sites.ifi.unicamp.br/dekoning/">sites.ifi.unicamp.br/dekoning/</a></li>
-                                            <li><a href="http://sites.ifi.unicamp.br/delima/">sites.ifi.unicamp.br/delima/</a></li>
-                                            <li><a href="http://sites.ifi.unicamp.br/dmugarte/">sites.ifi.unicamp.br/dmugarte/</a></li>
-                                            <li><a href="http://sites.ifi.unicamp.br/dmuraca/">sites.ifi.unicamp.br/dmuraca/</a></li>
-                                            <li><a href="http://sites.ifi.unicamp.br/doretto/">sites.ifi.unicamp.br/doretto/</a></li>
-                                            <li><a href="http://sites.ifi.unicamp.br/drcc/">sites.ifi.unicamp.br/drcc/</a></li>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header" id="flush-heading6">
-                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse6" aria-expanded="false" aria-controls="flush-collapse6">
-                                            <a class="links">E</a>
-                                        </button>
-                                    </h2>
-                                    <div id="flush-collapse6" class="accordion-collapse collapse" aria-labelledby="flush-heading6" data-bs-parent="#accordionFlushExample">
-                                        <div class="accordion-body">
-                                            <li><a href="http://sites.ifi.unicamp.br/egranado/">sites.ifi.unicamp.br/egranado/</a></li>
-                                            <li><a href="http://sites.ifi.unicamp.br/emiranda/">sites.ifi.unicamp.br/emiranda/</a></li>
-                                            <li><a href="http://sites.ifi.unicamp.br/ensino/">sites.ifi.unicamp.br/ensino/</a></li>
-                                            <li><a href="http://sites.ifi.unicamp.br/escolasdeinverno/">sites.ifi.unicamp.br/escolasdeinverno/</a></li>
-                                            <li><a href="http://sites.ifi.unicamp.br/ettore/">sites.ifi.unicamp.br/ettore/</a></li>
-                                            <li><a href="http://sites.ifi.unicamp.br/extreme/">sites.ifi.unicamp.br/extreme/</a></li>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header" id="flush-heading7">
-                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse7" aria-expanded="false" aria-controls="flush-collapse7">
-                                            <a class="links">F</a>
-                                        </button>
-                                    </h2>
-                                    <div id="flush-collapse7" class="accordion-collapse collapse" aria-labelledby="flush-heading7" data-bs-parent="#accordionFlushExample">
-                                        <div class="accordion-body">
-                                            <li><a href="http://sites.ifi.unicamp.br/f128/">sites.ifi.unicamp.br/f128/</a></li>
-                                            <li><a href="http://sites.ifi.unicamp.br/f328/">sites.ifi.unicamp.br/f328/</a></li>
-                                            <li><a href="http://sites.ifi.unicamp.br/f429/">sites.ifi.unicamp.br/f429/</a></li>
-                                            <li><a href="http://sites.ifi.unicamp.br/fandri/">sites.ifi.unicamp.br/fandri/</a></li>
-                                            <li><a href="http://sites.ifi.unicamp.br/fbarbosa/">sites.ifi.unicamp.br/fbarbosa/</a></li>
-                                            <li><a href="http://sites.ifi.unicamp.br/fberon/">sites.ifi.unicamp.br/fberon/</a></li>
-                                            <li><a href="http://sites.ifi.unicamp.br/feiradeprojetos/">sites.ifi.unicamp.br/feiradeprojetos/</a></li>
-                                            <li><a href="http://sites.ifi.unicamp.br/fenomenos-emergentes-sistemas-dimensoes-reduzidas/">sites.ifi.unicamp.br/fenomenos-emergentes-sistemas-dimensoes-reduzidas/</a></li>
-                                            <li><a href="http://sites.ifi.unicamp.br/fgarcia/">sites.ifi.unicamp.br/fgarcia/</a></li>
-                                            <li><a href="http://sites.ifi.unicamp.br/fife/">sites.ifi.unicamp.br/fife/</a></li>
-                                            <li><a href="http://sites.ifi.unicamp.br/fisica-para-curiosos/">sites.ifi.unicamp.br/fisica-para-curiosos/</a></li>
-                                            <li><a href="http://sites.ifi.unicamp.br/fotonicom/">sites.ifi.unicamp.br/fotonicom/</a></li>
-                                            <li><a href="http://sites.ifi.unicamp.br/fratesch/">sites.ifi.unicamp.br/fratesch/</a></li>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header" id="flush-heading8">
-                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse8" aria-expanded="false" aria-controls="flush-collapse8">
-                                            <a class="links">G</a>
-                                        </button>
-                                    </h2>
-                                    <div id="flush-collapse8" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
-                                        <div class="accordion-body">
-                                            <li><a href="http://sites.ifi.unicamp.br/gabriela/">sites.ifi.unicamp.br/gabriela/</a></li>
-                                            <li><a href="http://sites.ifi.unicamp.br/galvao/">sites.ifi.unicamp.br/galvao/</a></li>
-                                            <li><a href="http://sites.ifi.unicamp.br/gasco/">sites.ifi.unicamp.br/gasco/</a></li>
-                                            <li><a href="http://sites.ifi.unicamp.br/gefan/">sites.ifi.unicamp.br/gefan/</a></li>
-                                            <li><a href="http://sites.ifi.unicamp.br/gfrmd/">sites.ifi.unicamp.br/gfrmd/</a></li>
-                                            <li><a href="http://sites.ifi.unicamp.br/gfs/">sites.ifi.unicamp.br/gfs/</a></li>
-                                            <li><a href="http://sites.ifi.unicamp.br/gfurco/">sites.ifi.unicamp.br/gfurco/</a></li>
-                                            <li><a href="http://sites.ifi.unicamp.br/giles/">sites.ifi.unicamp.br/giles/</a></li>
-                                            <li><a href="http://sites.ifi.unicamp.br/gla/">sites.ifi.unicamp.br/gla/</a></li>
-                                            <li><a href="http://sites.ifi.unicamp.br/gmfa/">sites.ifi.unicamp.br/gmfa/</a></li>
-                                            <li><a href="http://sites.ifi.unicamp.br/goes/">sites.ifi.unicamp.br/goes/</a></li>
-                                            <li><a href="http://sites.ifi.unicamp.br/gpo/">sites.ifi.unicamp.br/gpo/</a></li>
-                                            <li><a href="http://sites.ifi.unicamp.br/gpoms/">sites.ifi.unicamp.br/gpoms/</a></li>
-                                            <li><a href="http://sites.ifi.unicamp.br/graduacao/">sites.ifi.unicamp.br/graduacao/</a></li>
-                                            <li><a href="http://sites.ifi.unicamp.br/gsonm/">sites.ifi.unicamp.br/gsonm/</a></li>
-                                            <li><a href="http://sites.ifi.unicamp.br/gustavo/">sites.ifi.unicamp.br/gustavo/</a></li>
-                                            <li><a href="http://sites.ifi.unicamp.br/guzzo/">sites.ifi.unicamp.br/guzzo/</a></li>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header" id="flush-heading9">
-                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse9" aria-expanded="false" aria-controls="flush-collapse9">
-                                            <a class="links">H</a>
-                                        </button>
-                                    </h2>
-                                    <div id="flush-collapse9" class="accordion-collapse collapse" aria-labelledby="flush-heading9" data-bs-parent="#accordionFlushExample">
-                                        <div class="accordion-body">
-                                            <li><a href="http://sites.ifi.unicamp.br/hadler/">sites.ifi.unicamp.br/hadler/</a></li>
-                                            <li><a href="http://sites.ifi.unicamp.br/hadrex/">sites.ifi.unicamp.br/hadrex/</a></li>
-                                            <li><a href="http://sites.ifi.unicamp.br/holanda/">sites.ifi.unicamp.br/holanda/</a></li>
-                                            <li><a href="http://sites.ifi.unicamp.br/hpc/">sites.ifi.unicamp.br/hpc/</a></li>
-                                            <li><a href="http://sites.ifi.unicamp.br/hugo/">sites.ifi.unicamp.br/hugo/</a></li>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header" id="flush-heading10">
-                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse10" aria-expanded="false" aria-controls="flush-collapse10">
-                                            <a class="links">I</a>
-                                        </button>
-                                    </h2>
-                                    <div id="flush-collapse10" class="accordion-collapse collapse" aria-labelledby="flush-heading10" data-bs-parent="#accordionFlushExample">
-                                        <div class="accordion-body">
-                                            <li><a href="http://sites.ifi.unicamp.br/iienfi/">sites.ifi.unicamp.br/iienfi/</a></li>
-                                            <li><a href="http://sites.ifi.unicamp.br/iikawa/">sites.ifi.unicamp.br/iikawa/</a></li>
-                                            <li><a href="http://sites.ifi.unicamp.br/imre/">sites.ifi.unicamp.br/imre/</a></li>
-                                            <li><a href="http://sites.ifi.unicamp.br/inctiq/">sites.ifi.unicamp.br/inctiq/</a></li>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header" id="flush-heading11">
-                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse11" aria-expanded="false" aria-controls="flush-collapse11">
-                                            <a class="links">K</a>
-                                        </button>
-                                    </h2>
-                                    <div id="flush-collapse11" class="accordion-collapse collapse" aria-labelledby="flush-heading11" data-bs-parent="#accordionFlushExample">
-                                        <div class="accordion-body">
-                                            <li><a href="http://sites.ifi.unicamp.br/kemp/">sites.ifi.unicamp.br/kemp/</a></li>
-                                            <li><a href="http://sites.ifi.unicamp.br/kitsf429/">sites.ifi.unicamp.br/kitsf429/</a></li>
-                                            <li><a href="http://sites.ifi.unicamp.br/kleinke/">sites.ifi.unicamp.br/kleinke/</a></li>
-                                            <li><a href="http://sites.ifi.unicamp.br/knobel/">sites.ifi.unicamp.br/knobel/</a></li>
-                                            <li><a href="http://sites.ifi.unicamp.br/kopel/">sites.ifi.unicamp.br/kopel/</a></li>
-                                            <li><a href="http://sites.ifi.unicamp.br/krpirota/">sites.ifi.unicamp.br/krpirota/</a></li>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header" id="flush-heading12">
-                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse12" aria-expanded="false" aria-controls="flush-collapse12">
-                                            <a class="links">L</a>
-                                        </button>
-                                    </h2>
-                                    <div id="flush-collapse12" class="accordion-collapse collapse" aria-labelledby="flush-heading12" data-bs-parent="#accordionFlushExample">
-                                        <div class="accordion-body">
-                                            <li><a href="http://sites.ifi.unicamp.br/labeletro/">sites.ifi.unicamp.br/labeletro/</a></li>
-                                            <li><a href="http://sites.ifi.unicamp.br/laboptica/">sites.ifi.unicamp.br/laboptica/</a></li>
-                                            <li><a href="http://sites.ifi.unicamp.br/labraiox/">sites.ifi.unicamp.br/labraiox/</a></li>
-                                            <li><a href="http://sites.ifi.unicamp.br/labvacrio/">sites.ifi.unicamp.br/labvacrio/</a></li>
-                                            <li><a href="http://sites.ifi.unicamp.br/lafe/">sites.ifi.unicamp.br/lafe/</a></li>
-                                            <li><a href="http://sites.ifi.unicamp.br/lagobra/">sites.ifi.unicamp.br/lagobra/</a></li>
-                                            <li><a href="http://sites.ifi.unicamp.br/laks/">sites.ifi.unicamp.br/laks/</a></li>
-                                            <li><a href="http://sites.ifi.unicamp.br/lamult/">sites.ifi.unicamp.br/lamult/</a></li>
-                                            <li><a href="http://sites.ifi.unicamp.br/lcordtez/">sites.ifi.unicamp.br/lcordtez/</a></li>
-                                            <li><a href="http://sites.ifi.unicamp.br/lei-leb/">sites.ifi.unicamp.br/lei-leb/</a></li>
-                                            <li><a href="http://sites.ifi.unicamp.br/lep/">sites.ifi.unicamp.br/lep/</a></li>
-                                            <li><a href="http://sites.ifi.unicamp.br/leptons/">sites.ifi.unicamp.br/leptons/</a></li>
-                                            <li><a href="http://sites.ifi.unicamp.br/lfmedica/">sites.ifi.unicamp.br/lfmedica/</a></li>
-                                            <li><a href="http://sites.ifi.unicamp.br/lfmoderna/">sites.ifi.unicamp.br/lfmoderna/</a></li>
-                                            <li><a href="http://sites.ifi.unicamp.br/lh2ennio/">sites.ifi.unicamp.br/lh2ennio/</a></li>
-                                            <li><a href="http://sites.ifi.unicamp.br/lhlima/">sites.ifi.unicamp.br/lhlima/</a></li>
-                                            <li><a href="http://sites.ifi.unicamp.br/lmbt/">sites.ifi.unicamp.br/lmbt/</a></li>
-                                            <li><a href="http://sites.ifi.unicamp.br/lmd/">sites.ifi.unicamp.br/lmd/</a></li>
-                                            <li><a href="http://sites.ifi.unicamp.br/lni/">sites.ifi.unicamp.br/lni/</a></li>
-                                            <li><a href="http://sites.ifi.unicamp.br/lpcm/">sites.ifi.unicamp.br/lpcm/</a></li>
-                                            <li><a href="http://sites.ifi.unicamp.br/lpd/">sites.ifi.unicamp.br/lpd/</a></li>
-                                            <li><a href="http://sites.ifi.unicamp.br/lunazzi/">sites.ifi.unicamp.br/lunazzi/</a></li>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header" id="flush-heading13">
-                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse13" aria-expanded="false" aria-controls="flush-collapse13">
-                                            <a class="links">M</a>
-                                        </button>
-                                    </h2>
-                                    <div id="flush-collapse13" class="accordion-collapse collapse" aria-labelledby="flush-heading13" data-bs-parent="#accordionFlushExample">
-                                        <div class="accordion-body">
-                                            <li><a href="http://sites.ifi.unicamp.br/mabernal/">sites.ifi.unicamp.br/mabernal/</a></li>
-                                            <li><a href="http://sites.ifi.unicamp.br/machado/">sites.ifi.unicamp.br/machado/</a></li>
-                                            <li><a href="http://sites.ifi.unicamp.br/maicon/">sites.ifi.unicamp.br/maicon/</a></li>
-                                            <li><a href="http://sites.ifi.unicamp.br/maplima/">sites.ifi.unicamp.br/maplima/</a></li>
-                                            <li><a href="http://sites.ifi.unicamp.br/marcosoliveira/">sites.ifi.unicamp.br/marcosoliveira/</a></li>
-                                            <li><a href="http://sites.ifi.unicamp.br/marques/">sites.ifi.unicamp.br/marques/</a></li>
-                                            <li><a href="http://sites.ifi.unicamp.br/mbonanca/">sites.ifi.unicamp.br/mbonanca/</a></li>
-                                            <li><a href="http://sites.ifi.unicamp.br/menon/">sites.ifi.unicamp.br/menon/</a></li>
-                                            <li><a href="http://sites.ifi.unicamp.br/modelodocente/">sites.ifi.unicamp.br/modelodocente/</a></li>
-                                            <li><a href="http://sites.ifi.unicamp.br/modeloevento/">sites.ifi.unicamp.br/modeloevento/</a></li>
-                                            <li><a href="http://sites.ifi.unicamp.br/modelogrupo/">sites.ifi.unicamp.br/modelogrupo/</a></li>
-                                            <li><a href="http://sites.ifi.unicamp.br/monica/">sites.ifi.unicamp.br/monica/</a></li>
-                                            <li><a href="http://sites.ifi.unicamp.br/mtamash/">sites.ifi.unicamp.br/mtamash/</a></li>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header" id="flush-heading14">
-                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse14" aria-expanded="false" aria-controls="flush-collapse14">
-                                            <a class="links">N</a>
-                                        </button>
-                                    </h2>
-                                    <div id="flush-collapse14" class="accordion-collapse collapse" aria-labelledby="flush-heading14" data-bs-parent="#accordionFlushExample">
-                                        <div class="accordion-body">
-                                            <li><a href="http://sites.ifi.unicamp.br/nanophoton/">sites.ifi.unicamp.br/nanophoton/</a></li>
-                                            <li><a href="http://sites.ifi.unicamp.br/neurofisica/">sites.ifi.unicamp.br/neurofisica/</a></li>
-                                            <li><a href="http://sites.ifi.unicamp.br/neutrons/">sites.ifi.unicamp.br/neutrons/</a></li>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header" id="flush-heading15">
-                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse15" aria-expanded="false" aria-controls="flush-collapse15">
-                                            <a class="links">O</a>
-                                        </button>
-                                    </h2>
-                                    <div id="flush-collapse15" class="accordion-collapse collapse" aria-labelledby="flush-heading15" data-bs-parent="#accordionFlushExample">
-                                        <div class="accordion-body">
-                                            <li><a href="http://sites.ifi.unicamp.br/odilon/">sites.ifi.unicamp.br/odilon/</a></li>
-                                            <li><a href="http://sites.ifi.unicamp.br/optica/">sites.ifi.unicamp.br/optica/</a></li>
-                                            <li><a href="http://sites.ifi.unicamp.br/orlando/">sites.ifi.unicamp.br/orlando/</a></li>
-                                            <li><a href="http://sites.ifi.unicamp.br/osa/">sites.ifi.unicamp.br/osa/</a></li>
-                                            <li><a href="http://sites.ifi.unicamp.br/oteschke/">sites.ifi.unicamp.br/oteschke/</a></li>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header" id="flush-heading16">
-                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse16" aria-expanded="false" aria-controls="flush-collapse16">
-                                            <a class="links">P</a>
-                                        </button>
-                                    </h2>
-                                    <div id="flush-collapse16" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
-                                        <div class="accordion-body">
-                                            <li><a href="http://sites.ifi.unicamp.br/padilha/">sites.ifi.unicamp.br/padilha/</a></li>
-                                            <li><a href="http://sites.ifi.unicamp.br/pagliuso/">sites.ifi.unicamp.br/pagliuso/</a></li>
-                                            <li><a href="http://sites.ifi.unicamp.br/paixao/">sites.ifi.unicamp.br/paixao/</a></li>
-                                            <li><a href="http://sites.ifi.unicamp.br/paulasc/">sites.ifi.unicamp.br/paulasc/</a></li>
-                                            <li><a href="http://sites.ifi.unicamp.br/pereira/">sites.ifi.unicamp.br/pereira/</a></li>
-                                            <li><a href="http://sites.ifi.unicamp.br/photonicamp/">sites.ifi.unicamp.br/photonicamp/</a></li>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header" id="flush-heading17">
-                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse17" aria-expanded="false" aria-controls="flush-collapse17">
-                                            <a class="links">Q</a>
-                                        </button>
-                                    </h2>
-                                    <div id="flush-collapse17" class="accordion-collapse collapse" aria-labelledby="flush-heading17" data-bs-parent="#accordionFlushExample">
-                                        <div class="accordion-body">
-                                            <li><a href="http://sites.ifi.unicamp.br/qcd-tnt4/">sites.ifi.unicamp.br/qcd-tnt4/</a></li>
-                                            <li><a href="http://sites.ifi.unicamp.br/qinfunicamp/">sites.ifi.unicamp.br/qinfunicamp/</a></li>
-                                            <li><a href="http://sites.ifi.unicamp.br/qts/">sites.ifi.unicamp.br/qts/</a></li>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header" id="flush-heading18">
-                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse18" aria-expanded="false" aria-controls="flush-collapse18">
-                                            <a class="links">R</a>
-                                        </button>
-                                    </h2>
-                                    <div id="flush-collapse18" class="accordion-collapse collapse" aria-labelledby="flush-heading18" data-bs-parent="#accordionFlushExample">
-                                        <div class="accordion-body">
-                                            <li><a href="http://sites.ifi.unicamp.br/rabelo/">sites.ifi.unicamp.br/rabelo/</a></li>
-                                            <li><a href="http://sites.ifi.unicamp.br/raios-cosmicos/">sites.ifi.unicamp.br/raios-cosmicos/</a></li>
-                                            <li><a href="http://sites.ifi.unicamp.br/rbmerlo/">sites.ifi.unicamp.br/rbmerlo/</a></li>
-                                            <li><a href="http://sites.ifi.unicamp.br/retinhaxxv/">sites.ifi.unicamp.br/retinhaxxv/</a></li>
-                                            <li><a href="http://sites.ifi.unicamp.br/rickson/">sites.ifi.unicamp.br/rickson/</a></li>
-                                            <li><a href="http://sites.ifi.unicamp.br/rouxinol/">sites.ifi.unicamp.br/rouxinol/</a></li>
-                                            <li><a href="http://sites.ifi.unicamp.br/roversi/">sites.ifi.unicamp.br/roversi/</a></li>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header" id="flush-heading19">
-                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse19" aria-expanded="false" aria-controls="flush-collapse19">
-                                            <a class="links">S</a>
-                                        </button>
-                                    </h2>
-                                    <div id="flush-collapse19" class="accordion-collapse collapse" aria-labelledby="flush-heading19" data-bs-parent="#accordionFlushExample">
-                                        <div class="accordion-body">
-                                            <li><a href="http://sites.ifi.unicamp.br/sbef2017/">sites.ifi.unicamp.br/sbef2017/</a></li>
-                                            <li><a href="http://sites.ifi.unicamp.br/soares/">sites.ifi.unicamp.br/soares/</a></li>
-                                            <li><a href="http://sites.ifi.unicamp.br/sobreira/">sites.ifi.unicamp.br/sobreira/</a></li>
-                                            <li><a href="http://sites.ifi.unicamp.br/spsasnano/">sites.ifi.unicamp.br/spsasnano/</a></li>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header" id="flush-heading20">
-                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse20" aria-expanded="false" aria-controls="flush-collapseThree">
-                                            <a class="links">T</a>
-                                        </button>
-                                    </h2>
-                                    <div id="flush-collapse20" class="accordion-collapse collapse" aria-labelledby="flush-heading20" data-bs-parent="#accordionFlushExample">
-                                        <div class="accordion-body">
-                                            <li><a href="http://sites.ifi.unicamp.br/takahashi/">sites.ifi.unicamp.br/takahashi/</a></li>
-                                            <li><a href="http://sites.ifi.unicamp.br/tessler/">sites.ifi.unicamp.br/tessler/</a></li>
-                                            <li><a href="http://sites.ifi.unicamp.br/torrieri/">sites.ifi.unicamp.br/torrieri/</a></li>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header" id="flush-heading21">
-                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse21" aria-expanded="false" aria-controls="flush-collapse21">
-                                            <a class="links">U</a>
-                                        </button>
-                                    </h2>
-                                    <div id="flush-collapse21" class="accordion-collapse collapse" aria-labelledby="flush-heading21" data-bs-parent="#accordionFlushExample">
-                                        <div class="accordion-body">
-                                            <li><a href="http://sites.ifi.unicamp.br/upaifgw/">sites.ifi.unicamp.br/upaifgw/</a></li>
-                                            <li><a href="http://sites.ifi.unicamp.br/urbano/">sites.ifi.unicamp.br/urbano/</a></li>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header" id="flush-heading22">
-                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse22" aria-expanded="false" aria-controls="flush-collapse22">
-                                            <a class="links">V</a>
-                                        </button>
-                                    </h2>
-                                    <div id="flush-collapse22" class="accordion-collapse collapse" aria-labelledby="flush-heading22" data-bs-parent="#accordionFlushExample">
-                                        <div class="accordion-body">
-                                            <li><a href="http://sites.ifi.unicamp.br/varlei/">sites.ifi.unicamp.br/varlei/</a></li>
-                                            <li><a href="http://sites.ifi.unicamp.br/veraoifgw/">sites.ifi.unicamp.br/veraoifgw/</a></li>
-                                            <li><a href="http://sites.ifi.unicamp.br/vidiella/">sites.ifi.unicamp.br/vidiella/</a></li>
-                                            <li><a href="http://sites.ifi.unicamp.br/vitiello/">sites.ifi.unicamp.br/vitiello/</a></li>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header" id="flush-heading23">
-                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse23" aria-expanded="false" aria-controls="flush-collapse23">
-                                            <a class="links">W</a>
-                                        </button>
-                                    </h2>
-                                    <div id="flush-collapse23" class="accordion-collapse collapse" aria-labelledby="flush-heading23" data-bs-parent="#accordionFlushExample">
-                                        <div class="accordion-body">
-                                            <li><a href="http://sites.ifi.unicamp.br/wpcct2020/">sites.ifi.unicamp.br/wpcct2020/</a></li>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header" id="flush-heading24">
-                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse24" aria-expanded="false" aria-controls="flush-collapse24">
-                                            <a class="links">Z</a>
-                                        </button>
-                                    </h2>
-                                    <div id="flush-collapse24" class="accordion-collapse collapse" aria-labelledby="flush-heading24" data-bs-parent="#accordionFlushExample">
-                                        <div class="accordion-body">
-                                            <li><a href="http://sites.ifi.unicamp.br/zacarias/">sites.ifi.unicamp.br/zacarias/</a></li>
-                                            <li><a href="http://sites.ifi.unicamp.br/zagonel/">sites.ifi.unicamp.br/zagonel/</a></li>
-                                        </div>
-                                    </div>
-                                </div>
-
-
-                            </div>
-                        </div>
+        <div class="carrossel">
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="..." class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="..." class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="..." class="d-block w-100" alt="...">
                     </div>
                 </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
             </div>
         </div>
-    </section>
-
-    <script src="javascript.js">    </script>
-<footer class="footer">
-    <div class="footer-content">
-        <img class="img-footer" src="https://i.ibb.co/yYHGT6C/unicamp-logo.png" border="0">
-        <p class="footer-advice">Este site não é uma publicação oficial do IFGW, acesse <a class="footer-advice" href="https://portal.ifi.unicamp.br">www.ifi.unicamp.br</a> para a versão institucional.
-            A responsabilidade por seu conteúdo é exclusivamente do autor.</p>
-        <ul class="socials">
-                <button  type="button" class="btn btn-outline-danger">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
-                        <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path>
-                    </svg>
-                    <a class="github" href="https://github.com/JohnVRMDev">GITHUB • JOHN</a>
+    </main>
+    <section class="1">
+        <div class="lista">
+            <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+                    Sites do IFGW
                 </button>
-        </ul>
-    </div>
-</footer>
+                <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton2">
+                <li><a href="http://sites.ifi.unicamp.br/1d-nano-app-2020/">z 1d-nano-app-2020/</a></li>
+                <li><a href="http://sites.ifi.unicamp.br/aantone/">sites.ifi.unicamp.br/aantone/</a></li>
+                <li><a href="http://sites.ifi.unicamp.br/afonseca/">sites.ifi.unicamp.br/afonseca/</a></li>
+                <li><a href="http://sites.ifi.unicamp.br/aguiar/">sites.ifi.unicamp.br/aguiar/</a></li>
+                <li><a href="http://sites.ifi.unicamp.br/aguilar/">sites.ifi.unicamp.br/aguilar/</a></li>
+                <li><a href="http://sites.ifi.unicamp.br/alegre/">sites.ifi.unicamp.br/alegre/</a></li>
+                <li><a href="http://sites.ifi.unicamp.br/alvarez/">sites.ifi.unicamp.br/alvarez/</a></li>
+                <li><a href="http://sites.ifi.unicamp.br/apgf/">sites.ifi.unicamp.br/apgf/</a></li>
+                <li><a href="http://sites.ifi.unicamp.br/araujo/">sites.ifi.unicamp.br/araujo/</a></li>
+                <li><a href="http://sites.ifi.unicamp.br/asiervo/">sites.ifi.unicamp.br/asiervo/</a></li>
+                <li><a href="http://sites.ifi.unicamp.br/athomaz/">sites.ifi.unicamp.br/athomaz/</a></li>
+                <li><a href="http://sites.ifi.unicamp.br/autretos/">sites.ifi.unicamp.br/autretos/</a></li>
+                <li><a href="http://sites.ifi.unicamp.br/brasil/">sites.ifi.unicamp.br/brasil/</a></li>
+                <li><a href="http://sites.ifi.unicamp.br/brito/">sites.ifi.unicamp.br/brito/</a></li>
+                <li><a href="http://sites.ifi.unicamp.br/brum/">sites.ifi.unicamp.br/brum/</a></li>
+                <li><a href="http://sites.ifi.unicamp.br/cabrera/">sites.ifi.unicamp.br/cabrera/</a></li>
+                <li><a href="http://sites.ifi.unicamp.br/caldeira/">sites.ifi.unicamp.br/caldeira/</a></li>
+                <li><a href="http://sites.ifi.unicamp.br/cardoso/">sites.ifi.unicamp.br/cardoso/</a></li>
+                <li><a href="http://sites.ifi.unicamp.br/carola/">sites.ifi.unicamp.br/carola/</a></li>
+                <li><a href="http://sites.ifi.unicamp.br/cdeneke/">sites.ifi.unicamp.br/cdeneke/</a></li>
+                <li><a href="http://sites.ifi.unicamp.br/cernmasterclass/">sites.ifi.unicamp.br/cernmasterclass/</a></li>
+                <li><a href="http://sites.ifi.unicamp.br/cesar/">sites.ifi.unicamp.br/cesar/</a></li>
+                <li><a href="http://sites.ifi.unicamp.br/chapter/">sites.ifi.unicamp.br/chapter/</a></li>
+                <li><a href="http://sites.ifi.unicamp.br/chinella/">sites.ifi.unicamp.br/chinella/</a></li>
+                <li><a href="http://sites.ifi.unicamp.br/cipaifgw/">sites.ifi.unicamp.br/cipaifgw/</a></li>
+                <li><a href="http://sites.ifi.unicamp.br/claitono/">sites.ifi.unicamp.br/claitono/</a></li>
+                <li><a href="http://sites.ifi.unicamp.br/cluster-planck/">sites.ifi.unicamp.br/cluster-planck/</a></li>
+                <li><a href="http://sites.ifi.unicamp.br/cosmologia/">sites.ifi.unicamp.br/cosmologia/</a></li>
+                <li><a href="http://sites.ifi.unicamp.br/covolan/">sites.ifi.unicamp.br/covolan/</a></li>
+                <li><a href="http://sites.ifi.unicamp.br/criogenia/">sites.ifi.unicamp.br/criogenia/</a></li>
+                <li><a href="http://sites.ifi.unicamp.br/cronologia/">sites.ifi.unicamp.br/cronologia/</a></li>
+                <li><a href="http://sites.ifi.unicamp.br/dainese/">sites.ifi.unicamp.br/dainese/</a></li>
+                <li><a href="http://sites.ifi.unicamp.br/dekoning/">sites.ifi.unicamp.br/dekoning/</a></li>
+                <li><a href="http://sites.ifi.unicamp.br/delima/">sites.ifi.unicamp.br/delima/</a></li>
+                <li><a href="http://sites.ifi.unicamp.br/dmugarte/">sites.ifi.unicamp.br/dmugarte/</a></li>
+                <li><a href="http://sites.ifi.unicamp.br/dmuraca/">sites.ifi.unicamp.br/dmuraca/</a></li>
+                <li><a href="http://sites.ifi.unicamp.br/doretto/">sites.ifi.unicamp.br/doretto/</a></li>
+                <li><a href="http://sites.ifi.unicamp.br/drcc/">sites.ifi.unicamp.br/drcc/</a></li>
+                <li><a href="http://sites.ifi.unicamp.br/egranado/">sites.ifi.unicamp.br/egranado/</a></li>
+                <li><a href="http://sites.ifi.unicamp.br/emiranda/">sites.ifi.unicamp.br/emiranda/</a></li>
+                <li><a href="http://sites.ifi.unicamp.br/ensino/">sites.ifi.unicamp.br/ensino/</a></li>
+                <li><a href="http://sites.ifi.unicamp.br/escolasdeinverno/">sites.ifi.unicamp.br/escolasdeinverno/</a></li>
+                <li><a href="http://sites.ifi.unicamp.br/ettore/">sites.ifi.unicamp.br/ettore/</a></li>
+                <li><a href="http://sites.ifi.unicamp.br/extreme/">sites.ifi.unicamp.br/extreme/</a></li>
+                <li><a href="http://sites.ifi.unicamp.br/f128/">sites.ifi.unicamp.br/f128/</a></li>
+                <li><a href="http://sites.ifi.unicamp.br/f328/">sites.ifi.unicamp.br/f328/</a></li>
+                <li><a href="http://sites.ifi.unicamp.br/f429/">sites.ifi.unicamp.br/f429/</a></li>
+                <li><a href="http://sites.ifi.unicamp.br/fandri/">sites.ifi.unicamp.br/fandri/</a></li>
+                <li><a href="http://sites.ifi.unicamp.br/fauth/">sites.ifi.unicamp.br/fauth/</a></li>
+                <li><a href="http://sites.ifi.unicamp.br/fbarbosa/">sites.ifi.unicamp.br/fbarbosa/</a></li>
+                <li><a href="http://sites.ifi.unicamp.br/fberon/">sites.ifi.unicamp.br/fberon/</a></li>
+                <li><a href="http://sites.ifi.unicamp.br/feiradeprojetos/">sites.ifi.unicamp.br/feiradeprojetos/</a></li>
+                <li><a href="http://sites.ifi.unicamp.br/fenomenos-emergentes-sistemas-dimensoes-reduzidas/">sites.ifi.unicamp.br/fenomenos-emergentes-sistemas-dimensoes-reduzidas/</a></li>
+                <li><a href="http://sites.ifi.unicamp.br/fgarcia/">sites.ifi.unicamp.br/fgarcia/</a></li>
+                <li><a href="http://sites.ifi.unicamp.br/fife/">sites.ifi.unicamp.br/fife/</a></li>
+                <li><a href="http://sites.ifi.unicamp.br/fisica-para-curiosos/">sites.ifi.unicamp.br/fisica-para-curiosos/</a></li>
+                <li><a href="http://sites.ifi.unicamp.br/fotonicom/">sites.ifi.unicamp.br/fotonicom/</a></li>
+                <li><a href="http://sites.ifi.unicamp.br/fratesch/">sites.ifi.unicamp.br/fratesch/</a></li>
+                <li><a href="http://sites.ifi.unicamp.br/gabriela/">sites.ifi.unicamp.br/gabriela/</a></li>
+                <li><a href="http://sites.ifi.unicamp.br/galvao/">sites.ifi.unicamp.br/galvao/</a></li>
+                <li><a href="http://sites.ifi.unicamp.br/gasco/">sites.ifi.unicamp.br/gasco/</a></li>
+                <li><a href="http://sites.ifi.unicamp.br/gefan/">sites.ifi.unicamp.br/gefan/</a></li>
+                <li><a href="http://sites.ifi.unicamp.br/gfrmd/">sites.ifi.unicamp.br/gfrmd/</a></li>
+                <li><a href="http://sites.ifi.unicamp.br/gfs/">sites.ifi.unicamp.br/gfs/</a></li>
+                <li><a href="http://sites.ifi.unicamp.br/gfurco/">sites.ifi.unicamp.br/gfurco/</a></li>
+                <li><a href="http://sites.ifi.unicamp.br/giles/">sites.ifi.unicamp.br/giles/</a></li>
+                <li><a href="http://sites.ifi.unicamp.br/gla/">sites.ifi.unicamp.br/gla/</a></li>
+                <li><a href="http://sites.ifi.unicamp.br/gmfa/">sites.ifi.unicamp.br/gmfa/</a></li>
+                <li><a href="http://sites.ifi.unicamp.br/goes/">sites.ifi.unicamp.br/goes/</a></li>
+                <li><a href="http://sites.ifi.unicamp.br/gpo/">sites.ifi.unicamp.br/gpo/</a></li>
+                <li><a href="http://sites.ifi.unicamp.br/gpoms/">sites.ifi.unicamp.br/gpoms/</a></li>
+                <li><a href="http://sites.ifi.unicamp.br/graduacao/">sites.ifi.unicamp.br/graduacao/</a></li>
+                <li><a href="http://sites.ifi.unicamp.br/gsonm/">sites.ifi.unicamp.br/gsonm/</a></li>
+                <li><a href="http://sites.ifi.unicamp.br/gustavo/">sites.ifi.unicamp.br/gustavo/</a></li>
+                <li><a href="http://sites.ifi.unicamp.br/guzzo/">sites.ifi.unicamp.br/guzzo/</a></li>
+                <li><a href="http://sites.ifi.unicamp.br/hadler/">sites.ifi.unicamp.br/hadler/</a></li>
+                <li><a href="http://sites.ifi.unicamp.br/hadrex/">sites.ifi.unicamp.br/hadrex/</a></li>
+                <li><a href="http://sites.ifi.unicamp.br/holanda/">sites.ifi.unicamp.br/holanda/</a></li>
+                <li><a href="http://sites.ifi.unicamp.br/hpc/">sites.ifi.unicamp.br/hpc/</a></li>
+                <li><a href="http://sites.ifi.unicamp.br/hugo/">sites.ifi.unicamp.br/hugo/</a></li>
+                <li><a href="http://sites.ifi.unicamp.br/iienfi/">sites.ifi.unicamp.br/iienfi/</a></li>
+                <li><a href="http://sites.ifi.unicamp.br/iikawa/">sites.ifi.unicamp.br/iikawa/</a></li>
+                <li><a href="http://sites.ifi.unicamp.br/imre/">sites.ifi.unicamp.br/imre/</a></li>
+                <li><a href="http://sites.ifi.unicamp.br/inctiq/">sites.ifi.unicamp.br/inctiq/</a></li>
+                <li><a href="http://sites.ifi.unicamp.br/kemp/">sites.ifi.unicamp.br/kemp/</a></li>
+                <li><a href="http://sites.ifi.unicamp.br/kitsf429/">sites.ifi.unicamp.br/kitsf429/</a></li>
+                <li><a href="http://sites.ifi.unicamp.br/kleinke/">sites.ifi.unicamp.br/kleinke/</a></li>
+                <li><a href="http://sites.ifi.unicamp.br/knobel/">sites.ifi.unicamp.br/knobel/</a></li>
+                <li><a href="http://sites.ifi.unicamp.br/kopel/">sites.ifi.unicamp.br/kopel/</a></li>
+                <li><a href="http://sites.ifi.unicamp.br/krpirota/">sites.ifi.unicamp.br/krpirota/</a></li>
+                <li><a href="http://sites.ifi.unicamp.br/labeletro/">sites.ifi.unicamp.br/labeletro/</a></li>
+                <li><a href="http://sites.ifi.unicamp.br/laboptica/">sites.ifi.unicamp.br/laboptica/</a></li>
+                <li><a href="http://sites.ifi.unicamp.br/labraiox/">sites.ifi.unicamp.br/labraiox/</a></li>
+                <li><a href="http://sites.ifi.unicamp.br/labvacrio/">sites.ifi.unicamp.br/labvacrio/</a></li>
+                <li><a href="http://sites.ifi.unicamp.br/lafe/">sites.ifi.unicamp.br/lafe/</a></li>
+                <li><a href="http://sites.ifi.unicamp.br/lagobra/">sites.ifi.unicamp.br/lagobra/</a></li>
+                <li><a href="http://sites.ifi.unicamp.br/laks/">sites.ifi.unicamp.br/laks/</a></li>
+                <li><a href="http://sites.ifi.unicamp.br/lamult/">sites.ifi.unicamp.br/lamult/</a></li>
+                <li><a href="http://sites.ifi.unicamp.br/lcordtez/">sites.ifi.unicamp.br/lcordtez/</a></li>
+                <li><a href="http://sites.ifi.unicamp.br/lei-leb/">sites.ifi.unicamp.br/lei-leb/</a></li>
+                <li><a href="http://sites.ifi.unicamp.br/lep/">sites.ifi.unicamp.br/lep/</a></li>
+                <li><a href="http://sites.ifi.unicamp.br/leptons/">sites.ifi.unicamp.br/leptons/</a></li>
+                <li><a href="http://sites.ifi.unicamp.br/lfmedica/">sites.ifi.unicamp.br/lfmedica/</a></li>
+                <li><a href="http://sites.ifi.unicamp.br/lfmoderna/">sites.ifi.unicamp.br/lfmoderna/</a></li>
+                <li><a href="http://sites.ifi.unicamp.br/lh2ennio/">sites.ifi.unicamp.br/lh2ennio/</a></li>
+                <li><a href="http://sites.ifi.unicamp.br/lhlima/">sites.ifi.unicamp.br/lhlima/</a></li>
+                <li><a href="http://sites.ifi.unicamp.br/lief/">sites.ifi.unicamp.br/lief/</a></li>
+                <li><a href="http://sites.ifi.unicamp.br/lmbt/">sites.ifi.unicamp.br/lmbt/</a></li>
+                <li><a href="http://sites.ifi.unicamp.br/lmd/">sites.ifi.unicamp.br/lmd/</a></li>
+                <li><a href="http://sites.ifi.unicamp.br/lni/">sites.ifi.unicamp.br/lni/</a></li>
+                <li><a href="http://sites.ifi.unicamp.br/lpcm/">sites.ifi.unicamp.br/lpcm/</a></li>
+                <li><a href="http://sites.ifi.unicamp.br/lpd/">sites.ifi.unicamp.br/lpd/</a></li>
+                <li><a href="http://sites.ifi.unicamp.br/lunazzi/">sites.ifi.unicamp.br/lunazzi/</a></li>
+                <li><a href="http://sites.ifi.unicamp.br/mabernal/">sites.ifi.unicamp.br/mabernal/</a></li>
+                <li><a href="http://sites.ifi.unicamp.br/machado/">sites.ifi.unicamp.br/machado/</a></li>
+                <li><a href="http://sites.ifi.unicamp.br/maicon/">sites.ifi.unicamp.br/maicon/</a></li>
+                <li><a href="http://sites.ifi.unicamp.br/maplima/">sites.ifi.unicamp.br/maplima/</a></li>
+                <li><a href="http://sites.ifi.unicamp.br/marcosoliveira/">sites.ifi.unicamp.br/marcosoliveira/</a></li>
+                <li><a href="http://sites.ifi.unicamp.br/marques/">sites.ifi.unicamp.br/marques/</a></li>
+                <li><a href="http://sites.ifi.unicamp.br/mbonanca/">sites.ifi.unicamp.br/mbonanca/</a></li>
+                <li><a href="http://sites.ifi.unicamp.br/menon/">sites.ifi.unicamp.br/menon/</a></li>
+                <li><a href="http://sites.ifi.unicamp.br/modelodocente/">sites.ifi.unicamp.br/modelodocente/</a></li>
+                <li><a href="http://sites.ifi.unicamp.br/modeloevento/">sites.ifi.unicamp.br/modeloevento/</a></li>
+                <li><a href="http://sites.ifi.unicamp.br/modelogrupo/">sites.ifi.unicamp.br/modelogrupo/</a></li>
+                <li><a href="http://sites.ifi.unicamp.br/monica/">sites.ifi.unicamp.br/monica/</a></li>
+                <li><a href="http://sites.ifi.unicamp.br/mtamash/">sites.ifi.unicamp.br/mtamash/</a></li>
+                <li><a href="http://sites.ifi.unicamp.br/nanophoton/">sites.ifi.unicamp.br/nanophoton/</a></li>
+                <li><a href="http://sites.ifi.unicamp.br/neurofisica/">sites.ifi.unicamp.br/neurofisica/</a></li>
+                <li><a href="http://sites.ifi.unicamp.br/neutrons/">sites.ifi.unicamp.br/neutrons/</a></li>
+                <li><a href="http://sites.ifi.unicamp.br/odilon/">sites.ifi.unicamp.br/odilon/</a></li>
+                <li><a href="http://sites.ifi.unicamp.br/optica/">sites.ifi.unicamp.br/optica/</a></li>
+                <li><a href="http://sites.ifi.unicamp.br/orlando/">sites.ifi.unicamp.br/orlando/</a></li>
+                <li><a href="http://sites.ifi.unicamp.br/osa/">sites.ifi.unicamp.br/osa/</a></li>
+                <li><a href="http://sites.ifi.unicamp.br/oteschke/">sites.ifi.unicamp.br/oteschke/</a></li>
+                <li><a href="http://sites.ifi.unicamp.br/padilha/">sites.ifi.unicamp.br/padilha/</a></li>
+                <li><a href="http://sites.ifi.unicamp.br/pagliuso/">sites.ifi.unicamp.br/pagliuso/</a></li>
+                <li><a href="http://sites.ifi.unicamp.br/paixao/">sites.ifi.unicamp.br/paixao/</a></li>
+                <li><a href="http://sites.ifi.unicamp.br/paulasc/">sites.ifi.unicamp.br/paulasc/</a></li>
+                <li><a href="http://sites.ifi.unicamp.br/pereira/">sites.ifi.unicamp.br/pereira/</a></li>
+                <li><a href="http://sites.ifi.unicamp.br/photonicamp/">sites.ifi.unicamp.br/photonicamp/</a></li>
+                <li><a href="http://sites.ifi.unicamp.br/qcd-tnt4/">sites.ifi.unicamp.br/qcd-tnt4/</a></li>
+                <li><a href="http://sites.ifi.unicamp.br/qinfunicamp/">sites.ifi.unicamp.br/qinfunicamp/</a></li>
+                <li><a href="http://sites.ifi.unicamp.br/rabelo/">sites.ifi.unicamp.br/rabelo/</a></li>
+                <li><a href="http://sites.ifi.unicamp.br/raios-cosmicos/">sites.ifi.unicamp.br/raios-cosmicos/</a></li>
+                <li><a href="http://sites.ifi.unicamp.br/rbmerlo/">sites.ifi.unicamp.br/rbmerlo/</a></li>
+                <li><a href="http://sites.ifi.unicamp.br/retinhaxxv/">sites.ifi.unicamp.br/retinhaxxv/</a></li>
+                <li><a href="http://sites.ifi.unicamp.br/rickson/">sites.ifi.unicamp.br/rickson/</a></li>
+                <li><a href="http://sites.ifi.unicamp.br/rouxinol/">sites.ifi.unicamp.br/rouxinol/</a></li>
+                <li><a href="http://sites.ifi.unicamp.br/roversi/">sites.ifi.unicamp.br/roversi/</a></li>
+                <li><a href="http://sites.ifi.unicamp.br/sbef2017/">sites.ifi.unicamp.br/sbef2017/</a></li>
+                <li><a href="http://sites.ifi.unicamp.br/soares/">sites.ifi.unicamp.br/soares/</a></li>
+                <li><a href="http://sites.ifi.unicamp.br/sobreira/">sites.ifi.unicamp.br/sobreira/</a></li>
+                <li><a href="http://sites.ifi.unicamp.br/spsasnano/">sites.ifi.unicamp.br/spsasnano/</a></li>
+                <li><a href="http://sites.ifi.unicamp.br/takahashi/">sites.ifi.unicamp.br/takahashi/</a></li>
+                <li><a href="http://sites.ifi.unicamp.br/tessler/">sites.ifi.unicamp.br/tessler/</a></li>
+                <li><a href="http://sites.ifi.unicamp.br/torrieri/">sites.ifi.unicamp.br/torrieri/</a></li>
+                <li><a href="http://sites.ifi.unicamp.br/upaifgw/">sites.ifi.unicamp.br/upaifgw/</a></li>
+                <li><a href="http://sites.ifi.unicamp.br/urbano/">sites.ifi.unicamp.br/urbano/</a></li>
+                <li><a href="http://sites.ifi.unicamp.br/varlei/">sites.ifi.unicamp.br/varlei/</a></li>
+                <li><a href="http://sites.ifi.unicamp.br/veraoifgw/">sites.ifi.unicamp.br/veraoifgw/</a></li>
+                <li><a href="http://sites.ifi.unicamp.br/vidiella/">sites.ifi.unicamp.br/vidiella/</a></li>
+                <li><a href="http://sites.ifi.unicamp.br/vitiello/">sites.ifi.unicamp.br/vitiello/</a></li>
+                <li><a href="http://sites.ifi.unicamp.br/wpcct2020/">sites.ifi.unicamp.br/wpcct2020/</a></li>
+                <li><a href="http://sites.ifi.unicamp.br/zacarias/">sites.ifi.unicamp.br/zacarias/</a></li>
+                <li><a href="http://sites.ifi.unicamp.br/zagonel/">sites.ifi.unicamp.br/zagonel/</a></li>
+            </ul>
+            <span></span>
+        </div>
+        </div>
+    </section>
+    <section class="2">
+        <div class="historia">
+            <span></span>
+        </div>
+    </section>
+<!--    <footer>
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="Camada_2" data-name="Camada 2" viewBox="0 0 423.8 399.7"><title>logo</title><image width="21" height="19" transform="scale(2.01)" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANQAAADICAYAAACQys/4AAAACXBIWXMAAAWJAAAFiQFtaJ36'1'1'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"/></svg>
+    </footer>
+   -->
 </body>
 </html>
